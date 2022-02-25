@@ -72,7 +72,7 @@ router.get("/laptop", async (req, res) => {
   }
 });
 
-// post router laptop
+// post router mobile
 router.post("/mobile", async (req, res) => {
     try {
         const mobile = await Mobile.create(req.body);
@@ -83,7 +83,7 @@ router.post("/mobile", async (req, res) => {
     }
 })
 
-// get request for laptop 
+// get request for mobile 
 router.get("/mobile", async (req, res) => {
   try {
     const mobile = await Mobile.find().lean().exec();
